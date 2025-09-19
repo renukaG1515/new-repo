@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2025-09-18T16:24:29.930Z",
-    "end": "2025-09-18T16:24:38.840Z",
-    "duration": 8910,
+    "failures": 0,
+    "start": "2025-09-19T08:59:58.177Z",
+    "end": "2025-09-19T09:00:06.393Z",
+    "duration": 8216,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "2e9b0172-3860-4d4a-94f8-e4015e661771",
+      "uuid": "b3ad8a66-11bb-44d6-a6f7-ecab954f48fe",
       "title": "",
-      "fullFile": "cypress\\Integration\\examples\\signup.js",
-      "file": "cypress\\Integration\\examples\\signup.js",
+      "fullFile": "cypress\\Integration\\examples\\AddtoCard.js",
+      "file": "cypress\\Integration\\examples\\AddtoCard.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "f832313f-5814-4d88-8fad-d1de6f9ba93c",
-          "title": "Cypress Sample Test",
+          "uuid": "555afae2-3536-4d23-813e-bf2b18092f8e",
+          "title": "Add to cart",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,35 +36,31 @@
           "tests": [
             {
               "title": "Visits a webpage and performs actions",
-              "fullTitle": "Cypress Sample Test Visits a webpage and performs actions",
+              "fullTitle": "Add to cart Visits a webpage and performs actions",
               "timedOut": null,
-              "duration": 4216,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 5208,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\signup.js\\\\Cypress Sample Test -- Visits a webpage and performs actions (failed).png\"\n    ]\n  ]\n}",
-              "code": "cy.visit(\"https://www.signupgenius.com/index.cfm?go=w.Welcome&prior=w.createSignUp&formName=registerForm\");\ncy.wait(200);\ncy.get(\"#firstNameId\").type(\"Renuka\");\ncy.get(\"#lastNameId\").type(\"Gaikwad\");\ncy.get(\"#pwordId\").type(\"Rain@27\");\ncy.get(\"#myEmailId\").type(\"abc@123.com\");",
-              "err": {
-                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > [$injector:unpr] http://errors.angularjs.org/1.2.18/$injector/unpr?p0=googleServiceProvider%20%3C-%20googleService\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
-                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > [$injector:unpr] http://errors.angularjs.org/1.2.18/$injector/unpr?p0=googleServiceProvider%20%3C-%20googleService\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:437)\n    at <unknown> (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:11748)\n    at Object.c [as get] (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:10835)\n    at <unknown> (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:11822)\n    at Object.c [as get] (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:10835)\n    at HTMLDocument.<anonymous> (https://www.signupgenius.com/dist/js/reg.min.js?v=1757525348499:1:106)\n    at j (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:27244)\n    at Object.fireWith [as resolveWith] (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:28057)\n    at m.ready (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:29891)\n    at HTMLDocument.J (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:30257)",
-                "diff": null
-              },
-              "uuid": "54c9a0d3-d579-4ce7-9770-e9394495485d",
-              "parentUUID": "f832313f-5814-4d88-8fad-d1de6f9ba93c",
+              "context": null,
+              "code": "cy.visit(\"https://www.saucedemo.com/v1/index.html\");\ncy.get('input[name=\"user-name\"]').type(\"standard_user\");\ncy.get(\"input#password\").type(\"secret_sauce\");\ncy.get('input[type=\"submit\"]').click();\ncy.get(\"a#item_4_title_link\").invoke(\"text\").then((AR) => {\n  let ER = \"Sauce Labs Backpack\";\n  if (AR === ER) {\n    cy.log(\"\\u2705 Pass: Text matches\");\n  } else {\n    cy.log(\"\\u274C Fail: Text does not match\");\n  }\n});\ncy.contains(\".inventory_item_name\", \"Sauce Labs Backpack\").parents(\".inventory_item\").find(\".inventory_item_desc\").invoke(\"text\").then((AR1) => {\n  let ER1 = \"carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.\";\n  if (AR1 === ER1) {\n    cy.log(\"\\u2705 Pass: Text matches\");\n  } else {\n    cy.log(\"\\u274C Fail: Text does not match\");\n  }\n});\ncy.contains(\".inventory_item_name\", \"Sauce Labs Backpack\").parents(\".inventory_item\").find(\"button\").click();\ncy.get(\".shopping_cart_badge\").should(\"have.text\", \"1\").click();\ncy.contains(\".btn_action.checkout_button\", \"CHECKOUT\").click();\ncy.log(\"order checkouted successfully\");",
+              "err": {},
+              "uuid": "021a8847-167b-41f6-88b9-799c1ef6a39f",
+              "parentUUID": "555afae2-3536-4d23-813e-bf2b18092f8e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "54c9a0d3-d579-4ce7-9770-e9394495485d"
+          "passes": [
+            "021a8847-167b-41f6-88b9-799c1ef6a39f"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4216,
+          "duration": 5208,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
