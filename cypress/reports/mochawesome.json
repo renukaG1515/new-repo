@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-18T16:24:29.930Z",
+    "end": "2025-09-18T16:24:38.840Z",
+    "duration": 8910,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2e9b0172-3860-4d4a-94f8-e4015e661771",
+      "title": "",
+      "fullFile": "cypress\\Integration\\examples\\signup.js",
+      "file": "cypress\\Integration\\examples\\signup.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f832313f-5814-4d88-8fad-d1de6f9ba93c",
+          "title": "Cypress Sample Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits a webpage and performs actions",
+              "fullTitle": "Cypress Sample Test Visits a webpage and performs actions",
+              "timedOut": null,
+              "duration": 4216,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\signup.js\\\\Cypress Sample Test -- Visits a webpage and performs actions (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit(\"https://www.signupgenius.com/index.cfm?go=w.Welcome&prior=w.createSignUp&formName=registerForm\");\ncy.wait(200);\ncy.get(\"#firstNameId\").type(\"Renuka\");\ncy.get(\"#lastNameId\").type(\"Gaikwad\");\ncy.get(\"#pwordId\").type(\"Rain@27\");\ncy.get(\"#myEmailId\").type(\"abc@123.com\");",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > [$injector:unpr] http://errors.angularjs.org/1.2.18/$injector/unpr?p0=googleServiceProvider%20%3C-%20googleService\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > [$injector:unpr] http://errors.angularjs.org/1.2.18/$injector/unpr?p0=googleServiceProvider%20%3C-%20googleService\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:437)\n    at <unknown> (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:11748)\n    at Object.c [as get] (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:10835)\n    at <unknown> (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:11822)\n    at Object.c [as get] (https://www.signupgenius.com/dist/js/lib/angular-1.2.min.js?v=d5DG5BEQYE:1:10835)\n    at HTMLDocument.<anonymous> (https://www.signupgenius.com/dist/js/reg.min.js?v=1757525348499:1:106)\n    at j (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:27244)\n    at Object.fireWith [as resolveWith] (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:28057)\n    at m.ready (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:29891)\n    at HTMLDocument.J (https://www.signupgenius.com/dist/js/lib/jquery-1.11.1.min.js?v=d5DG5BEQYE:2:30257)",
+                "diff": null
+              },
+              "uuid": "54c9a0d3-d579-4ce7-9770-e9394495485d",
+              "parentUUID": "f832313f-5814-4d88-8fad-d1de6f9ba93c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "54c9a0d3-d579-4ce7-9770-e9394495485d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4216,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "E:\\Cypress\\CypressAutomation\\cypress\\reports",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}
