@@ -9,9 +9,7 @@
   "scripts": {
     "test:report": "rimraf cypress/reports && npx cypress run && node merge-reports.js"
   },
-  "scripts": {
-  "cypress:run": "cypress run"
-},
+  
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^23.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",

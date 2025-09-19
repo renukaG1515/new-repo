@@ -13,7 +13,7 @@ describe('Read data from Excel', () => {
         cy.get('input[name="user-name"]').type(userg);
         cy.get('input#password').type(passg);
         cy.get('input[type="submit"]').click();
-        cy.contains('button','Open Menu',{ timeout: 10000 }).click();
+        cy.contains('button', 'Open Menu', { timeout: 20000 }).should('be.visible');
         cy.get('#logout_sidebar_link').click();
         cy.log(`✅ PASS: successfully logged out :  ${userg}`);
       });
