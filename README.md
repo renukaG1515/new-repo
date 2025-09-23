@@ -58,7 +58,7 @@ The framework is modular, scalable, and written using Cypress + Mocha + Chai. It
 
 ## 📁 Folder Structure
 
-```bash
+
 cypress-swaglabs-tests/
 │
 ├── cypress/
@@ -110,6 +110,8 @@ npm install
 Make sure you have Node.js ≥ 14.x and npm ≥ 6.x installed.
 
 ## ✅ 🎮 Running Tests
+
+```bash
 
 Launch Cypress Test Runner (GUI)
 npx cypress open
