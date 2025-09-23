@@ -77,7 +77,9 @@ cypress-swaglabs-tests/
 
 ---
 
-<h1 style="color:#FF5733;">🏗️ Jenkins CI/CD Pipeline</h1>
+---
+
+# 🏗️ JENKINS CI/CD PIPELINE
 
 This project features a **Jenkins job** that automates running Cypress tests for the Swag Labs website, ensuring quality and stability on every code change.
 
@@ -85,17 +87,17 @@ This project features a **Jenkins job** that automates running Cypress tests for
 
 ### 🔧 Jenkins Job Details
 
-- **Job Name:** <code>Cypress-CI-CD</code>  
+- **Job Name:** `Cypress-CI-CD`  
 - **URL:** [http://localhost:8080/job/Cypress-CI-CD/](http://localhost:8080/job/Cypress-CI-CD/)  
-  <sub><sup><i>*(Local access only)*</i></sup></sub>
+  _*(Local access only)*_
 
 ---
 
 ### ⚙️ Pipeline Steps
 
 1. 🔄 Pull latest code from GitHub  
-2. 📦 Install dependencies using <code>npm install</code>  
-3. 🧪 Run Cypress tests with <code>npx cypress run</code>  
+2. 📦 Install dependencies using `npm install`  
+3. 🧪 Run Cypress tests with `npx cypress run`  
 4. 📁 Archive test reports and screenshots
 
 ---
@@ -106,7 +108,7 @@ This project features a **Jenkins job** that automates running Cypress tests for
   <img src="docs/jenkins-job-dashboard.png" alt="Jenkins Job Dashboard Screenshot" width="650" style="border-radius: 8px;" />
 </p>
 
-<sub><sup><i>Example Jenkins job dashboard & console output showing build status</i></sup></sub>
+*Example Jenkins job dashboard & console output showing build status*
 
 ---
 
