@@ -76,6 +76,9 @@ cypress-swaglabs-tests/
 └── README.md               # This file 😄
 
 ---
+## ✅ Test Scenarios
+
+
 | 🧪 Test Case                        | 🎯 Status |
 | ----------------------------------- | --------- |
 | Login with valid credentials        | ✅ Passed  |
@@ -90,12 +93,13 @@ cypress-swaglabs-tests/
 
 
 ---
+## ✅ Test Scenarios
+
 git clone https://github.com/renukaG1515/new-repo.git
 cd new-repo.git
 
 ---
-
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 🧑‍💻 Clone the Repository
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
@@ -105,7 +109,7 @@ cd YOUR_REPOSITORY_NAME
 npm install
 Make sure you have Node.js ≥ 14.x and npm ≥ 6.x installed.
 
-🎮 Running Tests
+## ✅ 🎮 Running Tests
 
 Launch Cypress Test Runner (GUI)
 npx cypress open
@@ -118,9 +122,7 @@ npx cypress run --spec "cypress/integration/login.spec.js"
 Cypress can auto-generate screenshots and videos on test failure.
 
 
-
-
-# 🏗️ JENKINS CI/CD PIPELINE
+##🏗️ JENKINS CI/CD PIPELINE
 
 This project features a **Jenkins job** that automates running Cypress tests for the Swag Labs website, ensuring quality and stability on every code change.
 
@@ -143,12 +145,4 @@ This project features a **Jenkins job** that automates running Cypress tests for
 
 ---
 
-### Screenshots of Jenkins Job (Example)
 
-<p align="center">
-  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins job dashboard" width="600" />
-  <br />
-  <em>Jenkins job console output & build status</em>
-</p>
-
----
