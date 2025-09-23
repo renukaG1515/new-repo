@@ -75,30 +75,41 @@ cypress-swaglabs-tests/
 ├── package.json            # Dependencies and scripts
 └── README.md               # This file 😄
 
-## 🏗️ Jenkins CI/CD Pipeline
+---
 
-This project is integrated with a **Jenkins job** that automates running Cypress test cases to ensure quality on every code change.
+<h1 style="color:#FF5733;">🏗️ Jenkins CI/CD Pipeline</h1>
+
+This project features a **Jenkins job** that automates running Cypress tests for the Swag Labs website, ensuring quality and stability on every code change.
+
+---
 
 ### 🔧 Jenkins Job Details
 
-- **Job Name:** `Cypress-CI-CD`  
-- **URL:** [http://localhost:8080/job/Cypress-CI-CD/](http://localhost:8080/job/Cypress-CI-CD/) _(Local access only)_
+- **Job Name:** <code>Cypress-CI-CD</code>  
+- **URL:** [http://localhost:8080/job/Cypress-CI-CD/](http://localhost:8080/job/Cypress-CI-CD/)  
+  <sub><sup><i>*(Local access only)*</i></sup></sub>
+
+---
 
 ### ⚙️ Pipeline Steps
 
-1. 🔄 Pull latest code from GitHub repository  
-2. 📦 Install dependencies with `npm install`  
-3. 🧪 Execute Cypress tests using `npx cypress run`  
-4. 📁 Archive test reports and screenshots  
+1. 🔄 Pull latest code from GitHub  
+2. 📦 Install dependencies using <code>npm install</code>  
+3. 🧪 Run Cypress tests with <code>npx cypress run</code>  
+4. 📁 Archive test reports and screenshots
 
 ---
 
 ### 📸 Jenkins Job Screenshot
 
-> *(Example screenshot of Jenkins job dashboard and console output)*
-
 <p align="center">
-  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins Job Dashboard Screenshot" width="600" />
+  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins Job Dashboard Screenshot" width="650" style="border-radius: 8px;" />
 </p>
 
-> This Jenkins integration demonstrates a professional CI/CD pipeline for automated testing — a key skill in modern DevOps and quality assurance workflows.
+<sub><sup><i>Example Jenkins job dashboard & console output showing build status</i></sup></sub>
+
+---
+
+> 💡 **Note:** This Jenkins job setup demonstrates practical CI/CD skills for test automation and quality assurance — a key part of modern DevOps workflows.
+
+---
