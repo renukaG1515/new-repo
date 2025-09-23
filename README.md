@@ -31,7 +31,7 @@
 
 ## 📖 Project Overview
 
-> This project is a Cypress-based end-to-end test automation suite for [Swag Labs](https://www.saucedemo.com/) — a mock e-commerce platform for practicing QA automation.
+> This project is a Cypress-based end-to-end test automation suite for [Swag Labs](https://www.saucedemo.com/v1/index.html/) — a mock e-commerce platform for practicing QA automation.
 
 The framework is modular, scalable, and written using Cypress + Mocha + Chai. It includes test coverage for:
 
