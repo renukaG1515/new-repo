@@ -74,3 +74,37 @@ cypress-swaglabs-tests/
 ├── cypress.config.js       # Cypress config file
 ├── package.json            # Dependencies and scripts
 └── README.md               # This file 😄
+
+
+## 🏗️ Jenkins CI/CD Pipeline
+
+This project is integrated with a **Jenkins job** to automate running Cypress test cases.
+
+### Jenkins Job Details
+
+- **Job Name:** Cypress-CI-CD  
+- **URL:** [http://localhost:8080/job/Cypress-CI-CD/](http://localhost:8080/job/Cypress-CI-CD/)  
+  *(Note: This URL is accessible locally or within the internal network only.)*
+
+### Pipeline Overview
+
+The Jenkins job performs the following steps:
+
+1. Pulls the latest code from the GitHub repository.
+2. Installs project dependencies using `npm install`.
+3. Executes Cypress tests via `npx cypress run`.
+4. Collects and archives test reports and screenshots for review.
+
+---
+
+### Screenshots of Jenkins Job (Example)
+
+<p align="center">
+  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins job dashboard" width="600" />
+  <br />
+  <em>Jenkins job console output & build status</em>
+</p>
+
+---
+
+> Although the Jenkins URL is local, this setup demonstrates my hands-on experience building CI/CD pipelines that automatically run Cypress tests to ensure code quality on every change.
