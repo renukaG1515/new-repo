@@ -1,7 +1,7 @@
 <!-- README.md -->
 
 <h1 align="center" style="font-size: 3rem; font-weight: bold; border-bottom: none;">
-  🧪 Cypress Automation Framework for <a href="https://www.saucedemo.com/" target="_blank">Swag Labs</a>
+  🧪 Cypress Automation Framework for <a href="https://www.saucedemo.com/v1/index.html" target="_blank">Swag Labs</a>
 </h1>
 
 <p align="center">
