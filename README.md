@@ -76,35 +76,41 @@ cypress-swaglabs-tests/
 └── README.md               # This file 😄
 
 
-## 🏗️ Jenkins CI/CD Pipeline
+<h2 style="border-bottom: 3px solid #FF5733; padding-bottom: 8px; color: #FF5733; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  🏗️ Jenkins CI/CD Pipeline
+</h2>
 
-This project is integrated with a **Jenkins job** to automate running Cypress test cases.
+<div style="background: #1e1e1e; color: #f0f0f0; padding: 20px; border-radius: 12px; font-family: 'Courier New', Courier, monospace; max-width: 800px; margin: 20px auto; box-shadow: 0 8px 16px rgba(255, 87, 51, 0.25);">
 
-### Jenkins Job Details
+  <p style="font-size: 1.1rem; margin-bottom: 10px;">
+    This project is integrated with a <strong style="color:#FF6F61;">Jenkins</strong> job that automates running Cypress test cases to ensure quality on every code change.
+  </p>
 
-- **Job Name:** Cypress-CI-CD  
-- **URL:** [http://localhost:8080/job/Cypress-CI-CD/](http://localhost:8080/job/Cypress-CI-CD/)  
-  *(Note: This URL is accessible locally or within the internal network only.)*
+  <h3 style="color:#FF6F61; margin-top: 20px;">🔧 Jenkins Job Details</h3>
+  <ul style="list-style-type: none; padding-left: 0; font-size: 1rem;">
+    <li><strong>Job Name:</strong> <code style="background: #333; padding: 2px 6px; border-radius: 4px;">Cypress-CI-CD</code></li>
+    <li><strong>URL:</strong> <a href="http://localhost:8080/job/Cypress-CI-CD/" target="_blank" style="color: #FFA07A; text-decoration: underline;">
+      http://localhost:8080/job/Cypress-CI-CD/
+    </a> <span style="color:#ccc; font-size: 0.9rem;">(Local access only)</span></li>
+  </ul>
 
-### Pipeline Overview
+  <h3 style="color:#FF6F61; margin-top: 20px;">⚙️ Pipeline Steps</h3>
+  <ol style="font-size: 1rem; background: #2a2a2a; padding: 15px 20px; border-radius: 10px; box-shadow: inset 0 0 10px #FF6F61;">
+    <li>🔄 Pull latest code from GitHub repository</li>
+    <li>📦 Install dependencies with <code>npm install</code></li>
+    <li>🧪 Execute Cypress tests using <code>npx cypress run</code></li>
+    <li>📁 Archive test reports and screenshots</li>
+  </ol>
 
-The Jenkins job performs the following steps:
+  <h3 style="color:#FF6F61; margin-top: 20px;">📸 Jenkins Job Screenshot</h3>
+  <p style="font-size: 0.9rem; color: #bbb;">
+    (Example screenshot of Jenkins job dashboard and console output)
+  </p>
+  <div style="text-align:center; margin-top: 10px;">
+    <img src="docs/jenkins-job-dashboard.png" alt="Jenkins Job Dashboard Screenshot" style="max-width:100%; border-radius: 12px; box-shadow: 0 6px 12px rgba(255, 111, 97, 0.6);" />
+  </div>
 
-1. Pulls the latest code from the GitHub repository.
-2. Installs project dependencies using `npm install`.
-3. Executes Cypress tests via `npx cypress run`.
-4. Collects and archives test reports and screenshots for review.
-
----
-
-### Screenshots of Jenkins Job (Example)
-
-<p align="center">
-  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins job dashboard" width="600" />
-  <br />
-  <em>Jenkins job console output & build status</em>
-</p>
-
----
-
-> Although the Jenkins URL is local, this setup demonstrates my hands-on experience building CI/CD pipelines that automatically run Cypress tests to ensure code quality on every change.
+  <p style="margin-top: 25px; font-style: italic; font-size: 0.95rem; color: #eee;">
+    This Jenkins integration demonstrates a professional CI/CD pipeline for automated testing — a key skill in modern DevOps and quality assurance workflows.
+  </p>
+</div>
