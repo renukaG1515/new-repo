@@ -76,8 +76,49 @@ cypress-swaglabs-tests/
 └── README.md               # This file 😄
 
 ---
+| 🧪 Test Case                        | 🎯 Status |
+| ----------------------------------- | --------- |
+| Login with valid credentials        | ✅ Passed  |
+| Login with invalid credentials      | ✅ Passed  |
+| Add single & multiple items to cart | ✅ Passed  |
+| Remove items from cart              | ✅ Passed  |
+| Product detail page navigation      | ✅ Passed  |
+| Checkout flow (steps 1–3)           | ✅ Passed  |
+| Order confirmation                  | ✅ Passed  |
+| Logout functionality                | ✅ Passed  |
+| UI error messages and alerts        | ✅ Passed  |
+
 
 ---
+git clone https://github.com/renukaG1515/new-repo.git
+cd new-repo.git
+
+---
+
+⚙️ Installation & Setup
+
+🧑‍💻 Clone the Repository
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+cd YOUR_REPOSITORY_NAME
+
+📦 Install Dependencies
+npm install
+Make sure you have Node.js ≥ 14.x and npm ≥ 6.x installed.
+
+🎮 Running Tests
+
+Launch Cypress Test Runner (GUI)
+npx cypress open
+Run All Tests in Headless Mode
+npx cypress run
+
+Run a Specific Test File
+npx cypress run --spec "cypress/integration/login.spec.js"
+
+Cypress can auto-generate screenshots and videos on test failure.
+
+
+
 
 # 🏗️ JENKINS CI/CD PIPELINE
 
@@ -102,16 +143,12 @@ This project features a **Jenkins job** that automates running Cypress tests for
 
 ---
 
-### 📸 Jenkins Job Screenshot
+### Screenshots of Jenkins Job (Example)
 
 <p align="center">
-  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins Job Dashboard Screenshot" width="650" style="border-radius: 8px;" />
+  <img src="docs/jenkins-job-dashboard.png" alt="Jenkins job dashboard" width="600" />
+  <br />
+  <em>Jenkins job console output & build status</em>
 </p>
-
-*Example Jenkins job dashboard & console output showing build status*
-
----
-
-> 💡 **Note:** This Jenkins job setup demonstrates practical CI/CD skills for test automation and quality assurance — a key part of modern DevOps workflows.
 
 ---
