@@ -21,11 +21,7 @@
 - [✅ Test Scenarios](#-test-scenarios)
 - [⚙️ Installation & Setup](#️-installation--setup)
 - [🎮 Running Tests](#-running-tests)
-- [📸 Screenshots / Demo](#-screenshots--demo)
-- [✨ Best Practices](#-best-practices)
-- [🧑‍💻 Author](#-author)
-- [📄 License](#-license)
-- [🤝 Contributing](#-contributing)
+- [🏗️ JENKINS PIPELINE](#-jenkins-pipeline)
 
 ---
 
@@ -54,28 +50,7 @@ The framework is modular, scalable, and written using Cypress + Mocha + Chai. It
 | **VS Code**       | Recommended IDE                      |
 | **npm**           | Dependency management                |
 
----
 
-## 📁 Folder Structure
-
-
-cypress-swaglabs-tests/
-│
-├── cypress/
-│   ├── fixtures/           # Static test data (e.g. users.json)
-│   ├── integration/        # Main test files
-│   │   ├── login.spec.js
-│   │   ├── cart.spec.js
-│   │   └── checkout.spec.js
-│   ├── support/            # Custom commands and support setup
-│   │   ├── commands.js
-│   │   └── e2e.js
-│
-├── cypress.config.js       # Cypress config file
-├── package.json            # Dependencies and scripts
-└── README.md               # This file 😄
-
----
 ## ✅ Test Scenarios
 
 
@@ -92,8 +67,8 @@ cypress-swaglabs-tests/
 | UI error messages and alerts        | ✅ Passed  |
 
 
----
-## ✅ Test Scenarios
+
+## 🎮 Running Tests
 
 git clone https://github.com/renukaG1515/new-repo.git
 cd new-repo.git
@@ -109,9 +84,9 @@ cd YOUR_REPOSITORY_NAME
 npm install
 Make sure you have Node.js ≥ 14.x and npm ≥ 6.x installed.
 
-## ✅ 🎮 Running Tests
 
-```bash
+---
+## ✅ 🎮 Running Tests
 
 Launch Cypress Test Runner (GUI)
 npx cypress open
@@ -123,8 +98,8 @@ npx cypress run --spec "cypress/integration/login.spec.js"
 
 Cypress can auto-generate screenshots and videos on test failure.
 
-
-##🏗️ JENKINS CI/CD PIPELINE
+---
+## 🏗️ JENKINS PIPELINE
 
 This project features a **Jenkins job** that automates running Cypress tests for the Swag Labs website, ensuring quality and stability on every code change.
 
@@ -144,6 +119,26 @@ This project features a **Jenkins job** that automates running Cypress tests for
 2. 📦 Install dependencies using `npm install`  
 3. 🧪 Run Cypress tests with `npx cypress run`  
 4. 📁 Archive test reports and screenshots
+
+---
+## 📁 Folder Structure
+
+```bash
+cypress-swaglabs-tests/
+│
+├── cypress/
+│   ├── fixtures/           # Static test data (e.g. users.json)
+│   ├── integration/        # Main test files
+│   │   ├── login.spec.js
+│   │   ├── cart.spec.js
+│   │   └── checkout.spec.js
+│   ├── support/            # Custom commands and support setup
+│   │   ├── commands.js
+│   │   └── e2e.js
+│
+├── cypress.config.js       # Cypress config file
+├── package.json            # Dependencies and scripts
+└── README.md               # This file 😄
 
 ---
 
